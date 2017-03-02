@@ -2,13 +2,13 @@
 #
 # Table name: tasks
 #
-#  id          :integer          not null, primary key
 #  project_id  :string
 #  name        :string
 #  description :text
 #  state       :integer          default(10)
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  id          :uuid             not null, primary key
 #
 
 class Task < ActiveRecord::Base

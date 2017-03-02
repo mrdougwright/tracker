@@ -9,7 +9,7 @@ Feature: Listing tasks
       | STATE       | active                               |
     Given a task:
       | PROJECT ID  | 54f8419c-3f22-4cba-b194-5f8b4727ccfd |
-      | ID          | 42                                   |
+      | ID          | 3d5d6699-08a6-4285-9d2b-50506d60b086 |
       | NAME        | Sample Task                          |
       | DESCRIPTION | A small sample task                  |
     When I request this project's tasks list with parameters:
@@ -19,7 +19,7 @@ Feature: Listing tasks
       {
         tasks: [
           {
-            id: 42,
+            id: '3d5d6699-08a6-4285-9d2b-50506d60b086',
             name: 'Sample Task',
             description: 'A small sample task',
             state: 'todo'
